@@ -1,13 +1,13 @@
 version: '3.8'
 services:
   movies:
-    image: kishore1667/movies:latest
+    image: kishore1667/paymovies
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: kishore1667/train:latest
+    image: kishore1667/paytrain
     ports:
       - "82:80"
     deploy:
